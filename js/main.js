@@ -22,10 +22,14 @@ function swiperMod() {
 					clickable: true,
 				},
 			});
+			btnHide.style.display = "none";
+			btnShow.style.display = "none";
 		}
 	} else if (tablet.matches || desktop.matches) {
 		swiper.destroy();
 		init = false;
+		btnHide.style.display = "none";
+		btnShow.style.display = "block";
 	}
 }
 
